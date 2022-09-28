@@ -1,0 +1,34 @@
+ResponseType:::VXML
+		Success Response 
+			<?xml version="1.0" encoding="UTF-8"?>
+			<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/vxml http://www.w3.org/TR/voicexml20/vxml.xsd">
+				<form>
+					<block>
+						<script>
+							<![CDATA[
+								var status=200;
+								var provStatus="<Value>";
+								var subscriberPlan="<Value>";
+								var errCode="<Value>";
+								var respMsg="<Value>";
+							]]>
+						</script>
+						<return namelist="status provStatus subscriberPlan errCode respMsg"/>
+					</block>
+				</form>
+			</vxml>
+
+
+		Fail Response 
+
+			<?xml version="1.0" encoding="UTF-8"?>
+			<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/vxml http://www.w3.org/TR/voicexml20/vxml.xsd">
+
+				<form>
+					<block>
+						<var name="status" expr="'99'"/>
+						<return namelist="status"/>
+					</block>
+				</form>
+			</vxml>
+
