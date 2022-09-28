@@ -1,1 +1,1 @@
-web: gunicorn CmsVoda.wsgi
+web: gunicorn resume_demo.wsgi
